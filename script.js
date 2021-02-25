@@ -1,15 +1,27 @@
-$(document).ready(function(){
+const changeItemsButton = document.querySelector(`#changeItems`);
+const changeItemsVerticalButton = document.querySelector(`#changeItemsVertical`);
+const changeSizeButton = document.querySelector(`#changeSize`);
 
-        $("#changeItems").click(function(){
-            $("div.horisontal").css("flex-direction", "row-reverse");
-    });
+const horizontalBlock = document.querySelector(`.horizontal`);
+const verticalBlock = document.querySelector(`.vertical`);
+const firstArticle = document.querySelector(`.firstElem`);
 
-        $("#changeItemsVertical").click(function(){
-            $("div.vertical").css("flex-direction", "column-reverse");
-    });
+const rowReverseClass = `horizontal--reverse`;
+const columnReverseClass = `vertical--reverse`;
+const elementGrowClass = `firstElem--grow`;
 
-        $("#changeSize").click(function(){
-            $("article.firstElem").css("flex-grow", "1");
-    });
+const toggleRow = () => {
+    horizontalBlock.classList.toggle(rowReverseClass);
+};
 
-});
+const toggleColumn = () => {
+    verticalBlock.classList.toggle(columnReverseClass);
+};
+
+const growElement = () => {
+    firstArticle.classList.toggle(elementGrowClass);
+};
+
+changeItemsButton.addEventListener(`click`, toggleRow);
+changeItemsVerticalButton.addEventListener(`click`, toggleColumn);
+changeSizeButton.addEventListener(`click`, growElement)
