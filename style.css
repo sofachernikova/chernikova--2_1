@@ -45,14 +45,13 @@ p{
 
 .block{
     width: 90%;
-    min-height: 1000px;
     padding: 1%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(157, 194, 226, 0.35);
 }
 
-section.horisontal{
+.horisontal{
     display: flex;
     flex-direction: row;
 }
@@ -76,6 +75,7 @@ button{
     color: white;
     background-color:  rgb(21, 21, 61);
     margin: 1%;
+    font-family: Comfortaa;
 }
 button:hover{
     background-color:  rgb(17, 17, 99);
@@ -92,7 +92,7 @@ img{
     margin-top: 1%;
 }
 
-section.vertical{
+.vertical{
     display: flex;
     flex-direction: column;
 }

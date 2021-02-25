@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
         $("#changeItems").click(function(){
-            $("section.horisontal").css("flex-direction", "row-reverse");
+            $("div.horisontal").css("flex-direction", "row-reverse");
     });
 
     $("#changeItemsVertical").click(function(){
-        $("section.vertical").css("flex-direction", "column-reverse");
+        $("div.vertical").css("flex-direction", "column-reverse");
 });
 
 });
