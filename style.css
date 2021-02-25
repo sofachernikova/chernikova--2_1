@@ -26,13 +26,73 @@ footer{
 
 h1{
     font-family: Comfortaa;
+    word-wrap: break-word;
+}
+h2{
+    font-family: Comfortaa;
+    word-wrap: break-word;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-family: Comfortaa;
+    word-wrap: break-word;
+}
+p{
+    font-family: Comfortaa;
+    word-wrap: break-word;
 }
 
 .block{
     width: 90%;
     min-height: 1000px;
-    padding: 20px;
-    margin: auto;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(157, 194, 226, 0.35);
+}
+
+section.horisontal{
     display: flex;
-    background-color: rgb(157, 194, 226, 0.4);
+    flex-direction: row;
+}
+
+article{
+    background-color: #fff;
+    margin: 1.5%;
+    padding: 10px;
+    min-width: 5px;
+    text-align: center;
+}
+
+button{
+    border-radius: 5pc;
+    padding: 1%;
+    outline: none;
+    border-color: transparent;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    background-color:  rgb(21, 21, 61);
+    margin: 1%;
+}
+button:hover{
+    background-color:  rgb(17, 17, 99);
+    transition: 0.5s;
+}
+img{
+    width: 100%;
+}
+
+.vertical-element{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+section.vertical{
+    display: flex;
+    flex-direction: column;
 }
