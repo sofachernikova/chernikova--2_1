@@ -4,8 +4,12 @@ $(document).ready(function(){
             $("div.horisontal").css("flex-direction", "row-reverse");
     });
 
-    $("#changeItemsVertical").click(function(){
-        $("div.vertical").css("flex-direction", "column-reverse");
-});
+        $("#changeItemsVertical").click(function(){
+            $("div.vertical").css("flex-direction", "column-reverse");
+    });
+
+        $("#changeSize").click(function(){
+            $("article.firstElem").css("flex-grow", "1");
+    });
 
 });
